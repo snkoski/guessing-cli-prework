@@ -4,15 +4,16 @@ def run_guessing_game
   
   while true
     user_input = gets.chomp
+    rand = (1 + rand(6))
     if user_input == "exit"
       break
     end
-   if (1 + rand(6)) == user_input.to_i
+   if user_input.to_i == random_num
       puts "You guessed the correct number!"
-    break
+    
    else
       puts "The computer guessed #{random_num}."
-      break
+
     end
   end
   puts "Goodbye!"
