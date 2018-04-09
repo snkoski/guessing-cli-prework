@@ -4,7 +4,7 @@ def run_guessing_game
   
   while true
     user_input = gets.chomp
-    rand = (1 + rand(6))
+    random = (1 + rand(6))
     if user_input == "exit"
       break
     end
