@@ -8,11 +8,11 @@ def run_guessing_game
     if user_input == "exit"
       break
     end
-   if user_input.to_i == random_num
+   if user_input.to_i == random
       puts "You guessed the correct number!"
     
    else
-      puts "The computer guessed #{random_num}."
+      puts "The computer guessed #{random}."
 
     end
   end
